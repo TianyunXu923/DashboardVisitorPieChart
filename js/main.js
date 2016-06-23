@@ -11,19 +11,19 @@ var arc = d3.svg.arc()
 
 var labelArc = d3.svg.arc()
 	.outerRadius(radius - 40)
-	.innerRadius(radius - 70);
+	.innerRadius(radius - 30);
 
 var jsonGender = [
 	{
 		gender: 'male',
-		number: 1000,
+		number: 4000,
 	}, {
 		gender: 'female',
-		number: 9000,
+		number: 6000,
 	}
 ];	
 
-var pecentageArray = ['10%', '90%'];
+var pecentageArray = ['40%', '60%'];
 
 var svg = d3.select('body').append('svg')
 	.attr('width', width)
@@ -59,5 +59,5 @@ g.append('text')
 		return pecentageArray[index];
 	})
 	.style('fill', 'white')
-	.style('font', '12px');
+	.attr('font-size', '12px');
 	
