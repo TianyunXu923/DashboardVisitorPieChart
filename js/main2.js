@@ -84,6 +84,7 @@ for (var i = 0; i < 5; i++){
 		.attr('y', 35+20*i+20*i )
 		.text(dataArray[0][i]+'')	
 		.style('font-size', '10px')
+		.style('fill', '#7eabe7')
 
 	g.append('text')
 		.attr('x', function(d){
@@ -91,7 +92,8 @@ for (var i = 0; i < 5; i++){
 		})
 		.attr('y', 35+20*i+20*i )
 		.text(dataArray[1][i]+'')	
-		.style('font-size', '10px')	
+		.style('font-size', '10px')
+		.style('fill', '#f68a7d')	
 }	
 
 	svg.append('g')
